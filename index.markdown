@@ -5,7 +5,7 @@
 layout: home
 ---
 
-<video class="post" poster="//i.imgur.com/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" width="708" height="708">
+<video class="main-video" poster="//i.imgur.com/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy" width="740" height="740">
   <source src="//i.imgur.com/EPf2onF.mp4" type="video/mp4">
 </video>
 
