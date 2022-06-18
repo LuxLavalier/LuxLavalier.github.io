@@ -72,9 +72,10 @@
             />
           </svg>
         </a>
-        {%- endif -%} {%- if mastodon_username and mastodon_instance -%}
+        {%- endif -%} {%- if member.mastodon_username and
+        member.mastodon_instance -%}
         <a
-          href="https://{{ mastodon_instance| cgi_escape | escape}}/@{{mastodon_username}}"
+          href="https://{{ member.mastodon_instance| cgi_escape | escape}}/@{{member.mastodon_username}}"
         >
           <svg class="svg-icon">
             <use
