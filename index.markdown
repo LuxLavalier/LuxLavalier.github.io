@@ -6,15 +6,31 @@ layout: home
 ---
 
 <div class="ratio ratio-1x1">
-<video poster="//i.imgur.com/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
-  <source src="//i.imgur.com/EPf2onF.mp4" type="video/mp4">
-</video>
+  <video class="img-thumbnail" poster="/assets/img/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/EPf2onF.mp4" type="video/mp4">
+  </video>
 </div>
 
-<img src="//i.imgur.com/HQTcDUW.png" style="width:340px" />
-<img src="//i.imgur.com/cw5kVu5.png" style="width:340px" />
-<img src="//i.imgur.com/2AqwaSA.png" style="width:340px" />
-<img src="//i.imgur.com/knt3sVA.png" style="width:340px" />
+<br />
+
+<div class="row">
+  <div class="col">
+    <img src="/assets/img/HQTcDUW.png" class="img-thumbnail" />
+  </div>
+  <div class="col">
+    <img src="/assets/img/cw5kVu5.png" class="img-thumbnail" />
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <img src="/assets/img/2AqwaSA.png" class="img-thumbnail" />
+  </div>
+  <div class="col">
+    <img src="/assets/img/knt3sVA.png" class="img-thumbnail" />
+  </div>
+</div>
+
+<br />
 
 Lux Lavalier includes:
 
