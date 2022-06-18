@@ -2,7 +2,6 @@ title: Lux Lavalier
 description: Lux Lavalier is a beautiful wearable 40mm battery powered pendant with 64 SK9822-2020 "HDR" RGB LEDs surface mounted in a Fibonacci distribution and a Pixelblaze V3 Pico controller built in.
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 

@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<html lang="en">
   {%- include head.html -%}
 
-  <body>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      {%- include header.html -%}
 
-    {%- include header.html -%}
+      <main class="px-3">
+        <div class="wrapper">
+          <p>{{- site.description | escape -}}</p>
 
-    <main class="page-content" aria-label="Content">
+          {{ content }}
+        </div>
+      </main>
 
-      <div class="wrapper">
-
-        <p>{{- site.description | escape -}}</p>
-        
-        {{ content }}
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-
+      {%- include footer.html -%}
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
-
 </html>
