@@ -1,0 +1,25 @@
+- name: Ben Hencke
+  site_name: ElectroMage
+  site_url: electromage.com 
+  github_username: simap 
+  twitter_username: im889
+  instagram_username: ben.hencke 
+  youtube_username: simap2000
+
+- name: Debra Ansell
+  site_name: Geek Mom Projects
+  site_url: geekmomprojects.com 
+  github_username: geekmomprojects
+  twitter_username: GeekMomProjects
+  instagram_username: geekmomprojects 
+  youtube_username: geekmomprojects
+
+- name: Jason Coon
+  site_name: Evil Genius Labs
+  site_url: evilgeniuslabs.org
+  github_username: jasoncoon
+  twitter_username: jasoncoon_
+  mastodon_instance: mastodon.social
+  mastodon_username: jasoncoon
+  instagram_username: jasoncoon
+  youtube_username: JasonCoon

@@ -1,3 +1,13 @@
-theme: jekyll-theme-midnight
 title: Lux Lavalier
-description: Lux Lavalier is a beautiful 64mm circular disc with 64 RGB LEDs surface mounted in a Fibonacci distribution. Swirling and pulsing like a colorful galaxy, it's mesmerizing to watch.
+description: Lux Lavalier is a beautiful 40mm battery powered pendant with 64 SK9822-2020 "HDR" RGB LEDs surface mounted in a Fibonacci distribution and a Pixelblaze V3 Pico built in. Swirling and pulsing like a colorful galaxy, it's mesmerizing to watch.
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+google_analytics: G-ZYKK881CJY
+
+github_username: luxlavalier
+twitter_username: evilgeniuslab
+instagram_username: jasoncoon
