@@ -1,7 +1,7 @@
 <div class="row">
   {% for member in site.data.members %}
   <div class="col-4">
-    <ul class="list-unstyled social">
+    <ul class="list-unstyled">
       {%- if member.name -%}
       <li>{{ member.name }}</li>
       {%- endif -%} {%- if member.site_name and member.site_url -%}

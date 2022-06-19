@@ -1,9 +1,25 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
+
+**Coming soon** - the most ambitious crossover maker project of the millennium!
+
+<p style="text-align: left;">
+{{ site.description }}
+</p>
+
+<p style="text-align: left;">
+Lux Lavalier includes:
+
+<ul class="" style="text-align: left">
+  <li>The beautiful organic spirals of <a href="ttps://www.evilgeniuslabs.org/fibonacci64-micro-hdr">Fibonacci64 Micro w 64 HDR LEDs</a> from Evil Genius Labs.</li>
+  <li>The amazingly easy, powerful, yet low-power <a href="https://shop.electromage.com/products/pixelblaze-v3-pico-tiny-wifi-led-controller">Pixelblaze V3 Pico</a> from ElectroMage.</li>
+  <li>The awesome <a href="https://www.geekmomprojects.com/flexible-3d-printed-battery-holder">magnetic wearable battery connector</a> from Geek Mom Projects!</li>
+</ul>
+
+</p>
+
+**Geek-tested, Geek Mom Projects approved!**
 
 <div class="ratio ratio-1x1">
   <video class="img-thumbnail" poster="/assets/img/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
@@ -29,13 +45,3 @@ layout: home
     <img src="/assets/img/knt3sVA.png" class="img-thumbnail" />
   </div>
 </div>
-
-<br />
-
-Lux Lavalier includes:
-
-<ul class="list-unstyled">
-  <li>The beautiful organic spirals of Fibonacci64 Micro w 64 HDR LEDs from Evil Genius Labs.</li>
-  <li>The amazingly easy, powerful, yet low-power Pixelblaze V3 Pico from ElectroMage.</li>
-  <li>The awesome magnetic wearable battery connector from Geek Mom Projects!</li>
-</ul>
