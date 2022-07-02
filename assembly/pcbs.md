@@ -47,4 +47,4 @@ and [SparkFun](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-s
 1. Clean up any flux on the PCBs and contacts with isopropyl alcohol,
    especially if you didn't use solder with no-clean flux.
 
-##### Next step: [necklace assembly](/assembly/necklace)
+##### Next step: [Necklace Assembly](/assembly/necklace)
