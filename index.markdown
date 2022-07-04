@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Home
 ---
 
 **Coming soon** - the most ambitious crossover maker project of the millennium!
@@ -15,7 +16,7 @@ Lux Lavalier includes:
 **Geek-tested, Geek Mom Projects approved!**
 
 <div class="ratio ratio-1x1">
-  <video class="img-thumbnail" poster="/assets/img/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+  <video poster="/assets/img/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
     <source src="/assets/img/EPf2onF.mp4" type="video/mp4">
   </video>
 </div>
