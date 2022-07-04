@@ -3,10 +3,12 @@ layout: page
 title: Setup Instructions
 ---
 
-- If your Lux Lavalier is already assembled and you need to set up wi-fi:
+- ##### [Wi-Fi Setup Instructions](/setup/wifi)
 
-  ##### [Wi-Fi Setup Instructions](/setup/wifi)
+  If your Lux Lavalier is already assembled and you need to set up wi-fi.
 
-- If you've already set up wi-fi and you'd like to configure patterns and playlists:
+- ##### [Settings](/setup/settings)
 
-  ##### [Patterns and Playlists](/setup/patterns)
+  If you've already set up wi-fi and you need to configure settings.
+
+- ##### [Mapper](/setup/mapper)
