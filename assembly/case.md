@@ -80,4 +80,4 @@ playlist of pre-selected patterns endlessly (well, until the battery runs out an
 
 For more control, you can connect to it via wi-fi.
 
-##### Next step: [Wi-Fi and Software](/setup/wifi)
+##### Next step: [Wi-Fi](/setup/wifi)
