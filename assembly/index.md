@@ -3,8 +3,6 @@ layout: page
 title: Assembly Instructions
 ---
 
----
-
 ##### [PCB Assembly Instructions](/assembly/pcbs)
 
 If you have a kit where the Fibonacci LED & Pixelblaze Pico PCBs are not already assembled.
