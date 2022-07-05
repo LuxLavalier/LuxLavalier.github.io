@@ -1,13 +1,35 @@
-<header class="mb-auto">
-  <div>
-    <h3 class="float-md-start mb-0">
-      <a class="link-light" href="/">{{ site.title }}</a>
-    </h3>
-    <nav class="nav nav-masthead justify-content-center float-md-end">
-      <a class="nav-link fw-bold py-1 px-0" href="/">Home</a>
-      <a class="nav-link fw-bold py-1 px-0" href="/patterns">Patterns</a>
-      <a class="nav-link fw-bold py-1 px-0" href="/assembly">Assembly</a>
-      <a class="nav-link fw-bold py-1 px-0" href="/setup">Setup</a>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-darl">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">{{ site.title }}</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/waitlist">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/start">Getting Started</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/use">Usage & Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/patterns">Patterns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</header>
+</nav>
