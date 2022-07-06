@@ -3,8 +3,9 @@ layout: page
 title: Patterns
 ---
 
-{% assign sorted_patterns = site.data.patterns | sort: "title" %}
-{% for pattern in sorted_patterns %}
+<!-- {% assign sorted_patterns = site.data.patterns | sort: "title" %} -->
+
+{% for pattern in site.data.patterns %}
 
 <a id="{{ pattern.name }}" href="#{{ pattern.name }}">{{ pattern.title }}</a>
 

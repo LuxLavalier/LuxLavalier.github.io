@@ -1,51 +1,75 @@
-- name: spiral-twirls
-  title: Spiral Twirls
-  imgurId: p1jyZAx
-- name: fractal-fireball
-  title: Fractal Fireball
-  imgurId: uXqawZz
-- name: fractal-flower
-  title: Fractal Flower
-  imgurId: nERa8fq
-- name: infinity-flower
-  title: Infinity Flower
-  imgurId: jvLnd8v
-- name: edge-burst
-  title: Edge Burst
-  imgurId: VwGrEwI
-- name: millipede
-  title: Millipede
-  imgurId: YoOWozv
-- name: slow-color-shift
-  title: Slow Color Shift
-  imgurId: 6aEOY9l
-- name: slow-color-shift-2
-  title: Slow Color Shift 2
-  imgurId: ynvy9k6
-- name: slow-color-shift-angle
-  title: "Slow Color Shift: Angle"
-  imgurId: om0FV4i
-- name: slow-color-shift-radius
-  title: "Slow Color Shift: Radius"
-  imgurId: NSWIYBF
-- name: sparkfire
-  title: SparkFire
-  imgurId: TDgBGZ8
-- name: spin-cycle
-  title: Spin Cycle
-  imgurId: g6yLfs5
-- name: honeycomb
-  title: Honeycomb
-  imgurId: 09uz2dQ
-- name: pulse
-  title: Pulse
-  imgurId: b513gzJ
-- name: rainbow-melt
-  title: Rainbow Melt
-  imgurId: q7k8s9E
-- name: outward-palettes
-  title: Outward Palettes
-  imgurId: dYvWC6H
 - name: pride
   title: Pride
   imgurId: 04oC8FU
+
+- name: colorwaves
+  title: Color Waves
+  imgurId: IgwRwjf
+
+- name: rotating-palettes
+  title: Rotating Palettes
+  imgurId: PFwXWa6
+
+- name: spiral-twirls
+  title: Spiral Twirls
+  imgurId: p1jyZAx
+
+- name: outward-palettes
+  title: Outward Palettes
+  imgurId: f8P7xbu
+
+- name: fractal-fireball
+  title: Fractal Fireball
+  imgurId: uXqawZz
+
+- name: fractal-flower
+  title: Fractal Flower
+  imgurId: nERa8fq
+
+- name: infinity-flower
+  title: Infinity Flower
+  imgurId: jvLnd8v
+
+- name: edge-burst
+  title: Edge Burst
+  imgurId: VwGrEwI
+
+- name: millipede
+  title: Millipede
+  imgurId: YoOWozv
+
+- name: slow-color-shift
+  title: Slow Color Shift
+  imgurId: 6aEOY9l
+
+- name: slow-color-shift-2
+  title: Slow Color Shift 2
+  imgurId: ynvy9k6
+
+- name: slow-color-shift-angle
+  title: "Slow Color Shift: Angle"
+  imgurId: om0FV4i
+
+- name: slow-color-shift-radius
+  title: "Slow Color Shift: Radius"
+  imgurId: NSWIYBF
+
+- name: sparkfire
+  title: SparkFire
+  imgurId: TDgBGZ8
+
+- name: spin-cycle
+  title: Spin Cycle
+  imgurId: g6yLfs5
+
+- name: honeycomb
+  title: Honeycomb
+  imgurId: 09uz2dQ
+
+- name: pulse
+  title: Pulse
+  imgurId: b513gzJ
+
+- name: rainbow-melt
+  title: Rainbow Melt
+  imgurId: q7k8s9E
