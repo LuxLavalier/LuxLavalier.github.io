@@ -57,27 +57,8 @@ title: Case Assembly Instructions
 
    <img src="/assets/img/assembly/case/PXL_20220701_224328888.jpeg" class="img-thumbnail" />
 
-1. Insert the battery with the negative side against the spring in the holder.
+Congratulations! Your Lux Lavalier is now fully assembled!
 
-   <img src="/assets/img/assembly/case/PXL_20220701_224418245.jpeg" class="img-thumbnail" />
+Next, we'll connect the battery:
 
-   <img src="/assets/img/assembly/case/PXL_20220701_224435954.jpeg" class="img-thumbnail" />
-
-1. Insert the magnet end of the wire into the hole in the end of the negative side of the holder.
-
-   The light on the back should turn on and then back off.
-
-   <img src="/assets/img/assembly/case/PXL_20220701_224449121.jpeg" class="img-thumbnail" />
-
-   <img src="/assets/img/assembly/case/PXL_20220701_224450177.jpeg" class="img-thumbnail" />
-
-1. The lights on the front should turn on.
-
-   <img src="/assets/img/assembly/case/PXL_20220701_224503847.jpeg" class="img-thumbnail" />
-
-Congratulations! Your Lux Lavalier is now fully assembled! It will now automatically play a
-playlist of pre-selected patterns endlessly (well, until the battery runs out and needs recharged).
-
-For more control, you can connect to it via wi-fi.
-
-##### Next step: [Wi-Fi](/setup/wifi)
+##### Next step: [Battery](/setup/battery)
