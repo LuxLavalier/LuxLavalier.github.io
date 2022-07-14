@@ -3,6 +3,8 @@ layout: page
 title: Patterns
 ---
 
+<!-- Lux Lavalier has {{ site.data.patterns | size }} different patterns so far: -->
+
 <!-- {% assign sorted_patterns = site.data.patterns | sort: "title" %} -->
 
 {% for pattern in site.data.patterns %}

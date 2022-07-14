@@ -30,3 +30,7 @@ If your PCBs and magnetic wearable battery connector necklace are already attach
   <a href="/assembly/case">
     <img src="/assets/img/assembly/case/PXL_20220701_221516361.jpeg" class="img-thumbnail" style="width: 240px" />
   </a>
+
+---
+
+##### Next step: [Setup](/setup)
