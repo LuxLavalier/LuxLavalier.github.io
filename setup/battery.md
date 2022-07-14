@@ -10,8 +10,21 @@ title: Battery Instructions
 
 1. Your battery is very likely not fully-charged.
    Carefully note the charger and battery's correct direction, orientation, and polarity.
-   Insert the battery in to your charger and connect the charger to power.
+
+   <img src="/assets/img/setup/battery-1.jpg" class="img-thumbnail" />
+
+1. Insert the battery in to your charger and connect the charger to power.
    Your charger may plug in to a USB port or directly into a wall socket.
+
+   <img src="/assets/img/setup/battery-2.jpg" class="img-thumbnail" />
+
+   <img src="/assets/img/setup/battery-3.jpg" class="img-thumbnail" />
+
+   <img src="/assets/img/setup/battery-4.jpg" class="img-thumbnail" />
+
+   <img src="/assets/img/setup/battery-5.jpg" class="img-thumbnail" />
+
+   <img src="/assets/img/setup/battery-6.jpg" class="img-thumbnail" />
 
 1. Wait until your battery is fully-charged. The charging and charged indicators can vary
    between different charger types.
