@@ -6,7 +6,8 @@ title: Use & Care
 ##### Power
 The Lux Lavalier Pendant is powered by a rechargeable cylindrical button 14500 Lithium Ion (Li-Ion) Battery. Please **only use button top Lithium Ion batteries** in Lux Lavalier’s custom behind-the-neck holder.
 
-A button-top Li-Ion 14500 battery has a small "nub" on the positve terminal as shown in the first picture below:
+A button-top Li-Ion 14500 battery has a small "nub" on the positive terminal as shown in the first picture below:
+
 | Button Top | Flat Top |
 | --- | --- |
 |  <img src="/assets/img/use/ButtonTopLiIon14500.jpg" class="img-thumbnail" /> | <img src="/assets/img/use/FlatTopLiIon14500.jpg" class="img-thumbnail" /> |
