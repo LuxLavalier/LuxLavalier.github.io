@@ -3,8 +3,6 @@ layout: page
 title: Case Assembly Instructions
 ---
 
-#### Assembling the case:
-
 1. The front black acrylic may still have protective film on one or both sides.
 
    <img src="/assets/img/assembly/case/PXL_20220701_221516361.jpeg" class="img-thumbnail" />
@@ -58,6 +56,8 @@ title: Case Assembly Instructions
    <img src="/assets/img/assembly/case/PXL_20220701_224328888.jpeg" class="img-thumbnail" />
 
 Congratulations! Your Lux Lavalier is now fully assembled!
+
+---
 
 Next, we'll connect the battery:
 

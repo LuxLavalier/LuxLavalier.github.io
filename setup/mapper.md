@@ -22,3 +22,7 @@ If you ever do need to reset to the Lux Lavalier's default map, use these values
 <a href="/assets/img/setup/mapper.jpeg">
   <img src="/assets/img/setup/mapper.jpeg" class="img-thumbnail" />
 </a>
+
+---
+
+##### Next step: [Use & Care](/use)

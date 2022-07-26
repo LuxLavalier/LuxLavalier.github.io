@@ -15,7 +15,7 @@ Lux Lavalier includes:
 
 **Geek-tested, Geek Mom Projects approved!**
 
-<div class="ratio ratio-1x1">
+<div class="ratio ratio-1x1 img-thumbnail">
   <video poster="/assets/img/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
     <source src="/assets/img/EPf2onF.mp4" type="video/mp4">
   </video>

@@ -3,13 +3,27 @@ layout: page
 title: Necklace Assembly Instructions
 ---
 
-#### Trimming and soldering the magnetic wearable battery connector necklace:
-
 <img src="/assets/img/assembly/necklace/PXL_20220701_214936536.jpeg" class="img-thumbnail" />
 
-**Note**: If you're new to soldering, I highly recommend reading through a good soldering tutorial,
+##### Soldering Notes:
+
+If you're new to soldering, we highly recommend reading through a good soldering tutorial,
 such as the ones by [Adafruit](https://learn.adafruit.com/adafruit-guide-excellent-soldering)
 and [SparkFun](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering).
+
+We recommend using only lead-free solder and a good quality, temperature-controlled soldering iron set to 750F/400C.
+
+When soldering, clean the soldering tip often. We recommend using a brass wire sponge. After cleaning, melt a small amount of solder onto the tip of the iron.
+
+Using the high 750F/400C temperature should mean that you don't need to heat the pads for more than a few seconds at at time. This allows you to work more quickly and avoid overheating and damaging the pads or any components.
+
+If you're having a hard time getting the solder to melt, check your temperature.
+
+If the solder is sticking to the iron but not the pads, you may not be heating the pads long enough, but it should only take a few seconds. You can use soldering flux, which may help.
+
+---
+
+##### Trimming and soldering the magnetic wearable battery connector necklace:
 
 1. Unwind, unwrap, and gently straighten the wires by holding the wire at the battery holder
    gently grip the wire with your other hand and run it down the length of the wire.
@@ -75,5 +89,7 @@ and [SparkFun](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-s
    blink, and then the LEDs on the front should light up.
 
    Remove the battery before proceeding to assemble the case.
+
+---
 
 ##### Next step: [Case Assembly](/assembly/case)

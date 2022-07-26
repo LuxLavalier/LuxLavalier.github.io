@@ -1,13 +1,15 @@
 ---
 layout: page
-title: Wi-Fi
+title: Wi-Fi Setup Instructions
 ---
 
 Your Lux Lavalier should automatically play a playlist of pre-selected patterns endlessly (well, until the battery runs out and needs recharged).
 
 For more control, you can connect to it via wi-fi.
 
-Wi-fi is disabled, by default, to conserve battery power.
+**Note:** Wi-fi is disabled, by default, to conserve battery power.
+
+---
 
 ##### To turn on wi-fi:
 
@@ -20,9 +22,19 @@ Wi-fi is disabled, by default, to conserve battery power.
 ##### To connect your Lux Lavalier to a wi-fi network:
 
 1. If not already connected to a wi-fi network, your Lux Lavalier will create its own network named Pixelblaze_XXXXXXX,
-   where XXXXX is a code unique to your Lux Lavalier.
+   where XXXXX is a code unique to your Lux Lavalier. You should see it in the list of wi-fi networks available on
+   a computer or mobile device:
 
    <img src="/assets/img/setup/wifi-android.png" class="img-thumbnail" style="width: 240px" />
+
+   **Note:** If you can't find the Lux Lavalier's wi-fi network, it may not be in setup mode.
+   
+   To put it in to setup mode:
+   1. Press and hold the button for 5 more seconds.
+   1. If the status LED on the back flashes 5 times, it's now in setup mode.
+   1. If the status LED on the back flashes once, press and hold the button for 5 more seconds.
+   The status LED on the back should now flash 5 times, 
+   1. It should now be in setup mode and its wi-fi network should now appear in the list on your computer or mobile device.
 
 1. Connect to this network from a computer or mobile device.
 1. You should see a pop-up and/or automatically get redirected to configure the Lux Lavalier's wi-fi settings.
@@ -33,6 +45,8 @@ Wi-fi is disabled, by default, to conserve battery power.
 In WiFi Settings you an configure your Lux Lavalier to run in one of two modes:
 
 ##### Client Mode - Connect to a network
+
+---
 
 In this mode your Lux Lavalier can connect to an existing wi-fi network.
 Use this mode while at home or another location with an existing wi-fi network that you can connect to.

@@ -3,11 +3,11 @@ layout: page
 title: PCB Assembly Instructions
 ---
 
-Soldering the Pixelblaze Pico onto the back of the Fibonacci64 Micro HDR board:
-
 <img src="/assets/img/assembly/PXL_20220701_213444746.jpeg" class="img-thumbnail" />
 
-**Note**: If you're new to soldering, we highly recommend reading through a good soldering tutorial,
+##### Soldering Notes:
+
+If you're new to soldering, we highly recommend reading through a good soldering tutorial,
 such as the ones by [Adafruit](https://learn.adafruit.com/adafruit-guide-excellent-soldering)
 and [SparkFun](https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering).
 
@@ -20,6 +20,10 @@ Using the high 750F/400C temperature should mean that you don't need to heat the
 If you're having a hard time getting the solder to melt, check your temperature.
 
 If the solder is sticking to the iron but not the pads, you may not be heating the pads long enough, but it should only take a few seconds. You can use soldering flux, which may help.
+
+---
+
+##### Soldering the Pixelblaze Pico onto the back of the Fibonacci64 Micro HDR board:
 
 1. Note where and how the Pixelblaze Pico aligns with the outline on the back of the Fibonacci board,
    and how the contacts line up.
@@ -56,5 +60,7 @@ If the solder is sticking to the iron but not the pads, you may not be heating t
 
 1. Clean up any flux on the PCBs and contacts with isopropyl alcohol,
    especially if you didn't use solder with no-clean flux.
+
+---
 
 ##### Next step: [Necklace Assembly](/assembly/necklace)
