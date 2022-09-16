@@ -25,8 +25,8 @@ If the solder is sticking to the iron but not the pads, you may not be heating t
 
 ##### Trimming and soldering the magnetic wearable battery connector necklace:
 
-1. Unwind, unwrap, and gently straighten the wires by holding the wire at the battery holder
-   gently grip the wire with your other hand and run it down the length of the wire.
+1. Unwind, unwrap, and gently straighten the wires by holding the wire at the battery holder.
+   Gently grip the wire with your other hand and run it down the length of the wire.
    Repeat until the wires are fairly straight. They do not need to be perfectly straight,
    and may still have a curve to them.
 

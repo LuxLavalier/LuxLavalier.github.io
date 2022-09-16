@@ -9,7 +9,7 @@ title: Case Assembly Instructions
 
 1. Gently remove any protective film before proceeding by scraping the edge with a
    fingernail, thin plastic card, or plastic scraper. Do not use a metal object,
-   which could scrape the acrylic.
+   which could scratch the acrylic.
 
    <img src="/assets/img/assembly/case/PXL_20220701_221601286.jpeg" class="img-thumbnail" />
 
@@ -49,7 +49,10 @@ title: Case Assembly Instructions
    <img src="/assets/img/assembly/case/PXL_20220915_202424544.jpg" class="img-thumbnail" />
 
 1. Gently thread and hand-tighten the M2 screws, making sure not to pinch the wires.
-   Do not over-tighten the screws, or the threads in the acrylic holes can strip.
+   Do not over-tighten the screws, or the threads in the acrylic holes might strip.
+
+   The screws should not go all the way through the acrylic. There should be about 1mm
+   of space between the end of the screw and the front of the acrylic.
 
    <img src="/assets/img/assembly/case/PXL_20220915_202548413.jpg" class="img-thumbnail" />
 
