@@ -3,7 +3,9 @@ layout: home
 title: Home
 ---
 
-**Coming soon** - the most ambitious crossover maker project of the millennium!
+**Now available!** - the most ambitious crossover maker project of the millennium!
+
+<a class="btn btn-success" href="/buy">Buy Lux Lavalier</a>
 
 {{ site.description }}
 
