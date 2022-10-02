@@ -59,14 +59,17 @@ body {
 
 a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.75)
 }
 
 a:hover {
-  color: rgba(255, 255, 255, 0.75)
+  color: rgba(255, 255, 255, 0.5)
 }
 
 a.link-light:hover {
   color: rgba(255, 255, 255, 0.5) !important
 }
 
+code {
+  color: rgba(255, 255, 255, 0.75)
+}

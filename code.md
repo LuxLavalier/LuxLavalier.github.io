@@ -9,6 +9,22 @@ Let's get started writing your first pattern.
 
 ---
 
+#### Table of contents
+
+* [The `render` function](#the-render-function)
+* [RGB Colors and the `rgb` function](#rgb-colors-and-the-rgb-function)
+* [HSV Colors and the `hsv` function](#hsv-colors-and-the-hsv-function)
+* [The `index` variable](#the-index-variable)
+* [The `pixelCount` variable](#the-pixelcount-variable)
+* [Animation](#animation)
+* [The `time` function](#the-time-function)
+* [XY Mapping and the `render2D` function](#xy-mapping-and-the-render2d-function)
+* [Radius](#radius)
+* [Angle](#angle)
+* [Next Steps](#next-steps)
+
+---
+
 1. If you haven't already, connect your Lux Lavalier to your wi-fi, and open its web page: [Wi-Fi Setup Instructions](/setup/wifi)
 1. In the Pixelblaze web app, click the Edit tab at the top of the page.
 1. Delete any code in the New Expression editor.
@@ -41,6 +57,8 @@ Each pixel internally has three LEDs: Red, Green, and Blue. We can directly cont
 
 The Pixelblaze automatically scales this down with the global brightness you've set with the brightness slider in the upper-right corner of the page.
 
+<a title="SharkD, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:RGB_color_solid_cube.png"><img class="img-thumbnail" style="width: 240px" alt="RGB color solid cube" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/RGB_color_solid_cube.png/512px-RGB_color_solid_cube.png"></a>
+
 You may have found that it can be a little difficult to get just the right color by mixing different values for red, green, and blue. So let's explore a different way of handling colors: HSV!
 
 ---
@@ -66,6 +84,21 @@ The first number (hue) controls the color or shade from the rainbow color wheel:
 Notice that at 0 at the top it's red. As hue increases, it rotates clockwise so at .25 it's one quarter of the way around. At .33 or a third it's at green, then at .66 or two thirds (2/3) it's at blue, then it circles back towards red.
 
 Using the color wheel, change the first number in the `hsv` function and it should be much easier to set the LEDs to whatever color you want.
+
+The second number (saturation) controls the 'whiteness' of the color:
+
+<a title="Crossover1370, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Color_circle_(RGB).svg"><img class="img-thumbnail" style="width: 240px" alt="Color circle (RGB)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Color_circle_%28RGB%29.svg/512px-Color_circle_%28RGB%29.svg.png"></a>
+
+A saturation of zero will be white, regardless of the hue. A saturation of 1 is fully saturated, the strongest possible color of the hue. In between are more pastel colors.
+
+The third and final number (value) controls the brightness (or inversely blackness) of the color:
+
+<a title="HSV_color_solid_cylinder.png: SharkD
+derivative work: SharkD  Talk, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:HSV_color_solid_cylinder_saturation_gray.png"><img class="img-thumbnail" style="width: 240px" alt="HSV color solid cylinder saturation gray" src="assets/img/code/hsv.png"></a>
+
+A value of zero will be black, regardless of the hue or saturation. A value of 1 will be fully bright. In between are darker colors.
+
+Experiment with using different combinations of hue, saturation, and value to create different colors.
 
 Changing every pixel to be the same color is neat, but what if we want each pixel to be a different color?
 
