@@ -15,6 +15,16 @@ The sequencer can be configured via the web interface over wi-fi in the followin
 * <b><u>Shuffle All</u></b>: randomly shuffle between all patterns after playing each one for an adjustable duration.
 * <b><u>Playlist</u></b>: patterns can be arranged into a playlist with customizable order and duration for each pattern.
 
+---
+
+The Pixelblaze controller inside your Lux Lavalier makes it easy for you to write your own patterns! In fact, you can view and edit the code for every pattern included with it.
+
+##### Next step: [Writing your own patterns](/code)
+
+---
+
+##### Patterns:
+
 <!-- Lux Lavalier has {{ site.data.patterns | size }} different patterns so far: -->
 
 <!-- uncomment to sort patterns alphabetically, as opposed to the order they appear in the patterns.yml data file -->
