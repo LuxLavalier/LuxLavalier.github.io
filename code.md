@@ -84,7 +84,7 @@ We can use the pixel index to make each LED a different color.
 
    <img src="/assets/img/code/index.jpg" class="img-thumbnail" style="width: 240px" />
 
-The `render` function includes `index`, which is the index of the current pixel being rendered. Lux Lavalier has 64 pixels. The very first time render is called, index is set to 0. The next time, index is 1, etc, until index is 63. Then it wraps back to the beginning sot that the next time it's called it starts back over at 0.
+The `render` function includes `index`, which is the index of the current pixel being rendered. Lux Lavalier has 64 pixels. The very first time render is called, index is set to 0. The next time, index is 1, etc, until index is 63. Then it wraps back to the beginning so that the next time it's called it starts back over at 0.
 
 ---
 
@@ -134,27 +134,6 @@ Note that we've reorganized the code a bit:
 The `time` function returns a value between 0 and 1 that loops over and over. The speed it loops is controlled by the value passed to it. A value of 1 will loop about every 65 seconds. A value of .1 will loop about every 6.5 seconds. When added to a hue, this rotates the color around the hue color wheel. Since we add that to each pixel's fixed hue (`index / pixelCount`), they all rotate at the same speed.
 
 Note that Pixelblaze automatically handles values for hue larger than 1, wrapping it around to the other side of the color wheel.  So a hue of `1.33` is the same green as `0.33`.
-
----
-
-### The `random` function
-
-Let's add a little unpredictability to our code.
-
-Replace the code with the following:
-
-    export function render(index) {
-      chance = .99
-      
-      if (random(1) > chance) {
-        hue = random(1)
-        hsv(hue, 1, 1)
-      }
-    }
-
-You see see the pixels flashing in random colors.  Changing the value of `chance` higher (like `.999`) will make it less likely for a pixel to flash.
-
-We'll explore ways of improving this later with the `beforeRender` function.
 
 ---
 
@@ -350,4 +329,4 @@ Next steps:
 
 * Join the [ElectroMage Forum](https://forum.electromage.com) where Pixelblaze users help each other with questions, share amazing patterns, and more!
 
-We'll be back with more pattern tutorials! Soon we'll cover the `beforeRender` function for faster and more interesting patterns. And Pixelblaze will soon be adding support for custom color palettes, to make going beyond rainbows easier!
+We'll be back with more pattern tutorials! We'll cover the `beforeRender` function for faster and more interesting patterns. And Pixelblaze will soon be adding support for custom color palettes, to make going beyond rainbows easier!
