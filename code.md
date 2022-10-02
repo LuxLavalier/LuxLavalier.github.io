@@ -111,6 +111,13 @@ Replace the code with the following:
 
 And now the rainbow moves!
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/index.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/index.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
 Try different values in the `time` function on the second line. You should find that `1` makes it move extremely slowly, taking over a minute to make a full rotation, while `0.005` is very fast. With low enough numbers for time, it will rotate so fast that it looks white!
 
 Note that we've reorganized the code a bit:
@@ -179,17 +186,47 @@ We can animate these two dimensional rainbows the same way we did before, with t
 
       hsv(x + time(.1), 1, 1)
 
-should give you a rainbow that scrolls from left to right. To make it change direction, just subtract instead of adding time:
+should give you a rainbow that scrolls from left to right:
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/x.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/x.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
+To make it change direction, just subtract instead of adding time:
 
       hsv(x - time(.1), 1, 1)
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/x.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/x-neg.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 To make it scroll vertically, change `x` to `y`:
 
       hsv(y + time(.1), 1, 1)
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/y.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/y.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
 Diagonal:
 
       hsv(x + y + time(.1), 1, 1)
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/xy.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/xy.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 What if we want to make it rotate, expand, or contract? For that, we need some basic trigonometry! Wait, where are you going? Come back, I promise it's not that bad!
 
@@ -222,15 +259,29 @@ Notice we're only getting half of the rainbow, from red to yellow, green, and bl
 
 Make it move by adding time:
 
-  export function render2D(index, x, y) {
-    t = time(.1)
-    h = hypot(x - .5, y - .5) * 2 + t
-    hsv(h, 1, 1)
-  }
+    export function render2D(index, x, y) {
+      t = time(.1)
+      h = hypot(x - .5, y - .5) * 2 + t
+      hsv(h, 1, 1)
+    }
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/radius-center.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/radius-in.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 Flip the direction and make it move outward by subtracting time:
 
       h = hypot(x - .5, y - .5) * 2 - t
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/radius-center.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/radius-out.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 Experiment by changing any of the numbers in the code with different values:
 
@@ -269,6 +320,13 @@ Let's move it to the center, by changing line 3 to offset it (like we did for th
 Make it rotate by adding time on line 4:
 
     h = degrees + time(.1)
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/angle.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/angle.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 Note that this angular rainbow is different than where we started, using the pixels' index, which zig-zags back and forth, inward and outward, in one direction around the display. And with the pixels' angles, we can easily rotate the rainbow in any direction.
 
