@@ -44,6 +44,8 @@ It includes:
   </div>
 </div>
 
+<br />
+
 <div class="row">
   <div class="col">
     <img src="/assets/img/DSC_0160.webp" class="img-thumbnail" />
@@ -52,6 +54,8 @@ It includes:
     <img src="/assets/img/DSC_0253.webp" class="img-thumbnail" />
   </div>
 </div>
+
+<br />
 
 <div class="row">
   <div class="col">
@@ -62,6 +66,8 @@ It includes:
   </div>
 </div>
 
+<br />
+
 <div class="row">
   <div class="col">
     <img src="/assets/img/DSC_0211.webp" class="img-thumbnail" />
@@ -71,6 +77,8 @@ It includes:
   </div>
 </div>
 
+<br />
+
 <div class="row">
   <div class="col">
     <img src="/assets/img/DSC_0186.webp" class="img-thumbnail" />
@@ -79,6 +87,8 @@ It includes:
     <img src="/assets/img/DSC_0134.webp" class="img-thumbnail" />
   </div>
 </div>
+
+<br />
 
 <div class="row">
   <div class="col">
