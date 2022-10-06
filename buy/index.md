@@ -3,9 +3,9 @@ layout: page
 title: Buy
 ---
 
-Lux Lavalier is now available in small batches:
+Lux Lavalier is now available for purchase on the following sites:
 
-  <a href="https://www.tindie.com/products/27123"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="Evil Genius Labs on Tindie" width="200" height="104"></a>
+  <a href="https://www.tindie.com/products/27123"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="Evil Genius Labs on Tindie" height="63"></a>
   
   [Evil Genius Labs on Tindie](https://www.tindie.com/products/27123/)
 
