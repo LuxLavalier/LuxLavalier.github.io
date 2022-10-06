@@ -9,13 +9,23 @@ title: Home
 
 {{ site.description }}
 
-Lux Lavalier includes:
+It's a collaboration between Jason Coon of Evil Genius Labs, Ben Hencke of ElectroMage, and Debra Ansel of Geek Mom Projects.
+
+It includes:
 
 - The beautiful organic spirals of [Fibonacci64 Micro with 64 HDR LEDs](https://evilgeniuslabs.org/fibonacci64-micro-hdr) from Evil Genius Labs.
 - The amazingly easy, powerful, yet low-power [Pixelblaze V3 Pico](https://shop.electromage.com/products/pixelblaze-v3-pico-tiny-wifi-led-controller) from ElectroMage.
 - The awesome [magnetic wearable battery connector](https://www.geekmomprojects.com/flexible-3d-printed-battery-holder) from Geek Mom Projects!
+- Nylon case and bezel
+- Battery + charger
 
-**Geek-tested, Geek Mom Projects approved!**
+<div class="row">
+  <div class="col">
+    <img src="/assets/img/DSC_0161.webp" class="img-thumbnail" />
+  </div>
+</div>
+
+<br />
 
 <div class="ratio ratio-1x1 img-thumbnail">
   <video poster="/assets/img/EPf2onF.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
@@ -27,17 +37,51 @@ Lux Lavalier includes:
 
 <div class="row">
   <div class="col">
-    <img src="/assets/img/HQTcDUW.png" class="img-thumbnail" />
+    <img src="/assets/img/DSC_0139.webp" class="img-thumbnail" />
   </div>
   <div class="col">
-    <img src="/assets/img/cw5kVu5.png" class="img-thumbnail" />
+    <img src="/assets/img/DSC_0157.webp" class="img-thumbnail" />
   </div>
 </div>
+
 <div class="row">
   <div class="col">
-    <img src="/assets/img/2AqwaSA.png" class="img-thumbnail" />
+    <img src="/assets/img/DSC_0160.webp" class="img-thumbnail" />
   </div>
   <div class="col">
-    <img src="/assets/img/knt3sVA.png" class="img-thumbnail" />
+    <img src="/assets/img/DSC_0253.webp" class="img-thumbnail" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <img src="/assets/img/DSC_0237.webp" class="img-thumbnail" />
+  </div>
+  <div class="col">
+    <img src="/assets/img/DSC_0233.webp" class="img-thumbnail" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <img src="/assets/img/DSC_0211.webp" class="img-thumbnail" />
+  </div>
+  <div class="col">
+    <img src="/assets/img/DSC_0197.webp" class="img-thumbnail" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <img src="/assets/img/DSC_0186.webp" class="img-thumbnail" />
+  </div>
+  <div class="col">
+    <img src="/assets/img/DSC_0134.webp" class="img-thumbnail" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <img src="/assets/img/IMG_4960.webp" class="img-thumbnail" />
   </div>
 </div>
