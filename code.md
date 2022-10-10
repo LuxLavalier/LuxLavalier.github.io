@@ -68,6 +68,13 @@ You may have found that it can be a little difficult to get just the right color
 We can also control the pixel colors by using the `hsv` function. 
 
 1. Change the second line of the code to `hsv(0, 1, 1)` and all of the pixels should turn red.
+   
+   Here's the complete code:
+
+       export function render() {
+         hsv(0, 1, 1)
+       }
+
 1. Change it to `hsv(.33, 1, 1)` and they'll turn green.
 1. Change it to `hsv(.66, 1, 1)` and they'll turn blue.
 1. Change it to `hsv(1, 1, 1)` and they'll turn back to red.
@@ -113,6 +120,13 @@ We can use the pixel index to make each LED a different color.
        export function render(index) {
 
 1. Change the second line to `hsv(index / pixelCount, 1, 1)`
+   
+   Here's the complete code:
+
+       export function render(index) {
+         hsv(index / pixelCount, 1, 1)
+       }
+
 1. Congratulations, you made a round rainbow!
 
    <img src="/assets/img/code/index.jpg" class="img-thumbnail" style="width: 240px" />
@@ -332,6 +346,15 @@ Let's move it to the center, by changing line 3 to offset it (like we did for th
 Make it rotate by adding time on line 4:
 
     h = degrees + time(.1)
+   
+Here's the complete code:
+
+    export function render2D(index, x, y) {
+      radians = atan2(y - .5, x - .5)
+      degrees = radians / PI / 2
+      h = degrees + time(.1)
+      hsv(h, 1, 1)
+    }
 
 <div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
   <video poster="/assets/img/code/angle.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
