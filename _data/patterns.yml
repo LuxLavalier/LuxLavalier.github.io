@@ -73,3 +73,23 @@
 - name: rainbow-melt
   title: Rainbow Melt
   imgurId: q7k8s9E
+
+- name: eye-of-sauron
+  title: Eye of Sauron
+  imgurId: gfJFpmH
+  download: Eye of Sauron.epe
+
+- name: coronal-mass-ejection
+  title: Coronal Mass Ejection
+  imgurId: 48W9xaj
+  download: Coronal Mass Ejection.epe
+
+- name: palette-noise
+  title: Palette Noise
+  imgurId: p0cunj8
+  download: palette noise.epe
+
+- name: perlin-fire
+  title: Perlin Fire
+  imgurId: YGc74Ua
+  download: Perlin fire.epe

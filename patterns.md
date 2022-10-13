@@ -32,7 +32,7 @@ The Pixelblaze controller inside your Lux Lavalier makes it easy for you to writ
 
 {% for pattern in site.data.patterns %}
 
-<a id="{{ pattern.name }}" href="#{{ pattern.name }}">{{ pattern.title }}</a>
+<a id="{{ pattern.name }}" href="#{{ pattern.name }}">{{ pattern.title }}</a> {% if pattern.download %} <a href="/assets/patterns/{{ pattern.download }}"><i class="bi bi-cloud-download"></i></a> {% endif %}
 
 <div class="ratio ratio-1x1">
   <video poster="//i.imgur.com/{{ pattern.imgurId }}.png" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
