@@ -9,7 +9,7 @@ For example, in the v3.30 update exciting new features were added that allow for
 
 To update your Lux Lavalier:
 
-1. make sure it's [connected to a wi-fi network](/setup/wifi.md) with internet access.
+1. Make sure it's [connected to a wi-fi network](/setup/wifi.md) with internet access.
 1. Go to the [settings page](/setup/settings.md).
 1. Scroll down to the bottom of the page and click the `Check for Update` button.
 1. If an update is not found, you're already on the latest version.

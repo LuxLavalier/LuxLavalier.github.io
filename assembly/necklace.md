@@ -56,7 +56,7 @@ If the solder is sticking to the iron but not the pads, you may not be heating t
 
 1. Strip about 1/8" (3mm) of insulation off both ends of the wires. The insulation is relatively
    soft silicone, and can usually be stripped off by pinching it between your fingernails.
-   If you use wire cutters or strippers, just be careful not to cut any of the metal wire strands inside.
+   If you use wire cutters or strippers, be careful not to cut any of the metal wire strands inside.
 
    <img src="/assets/img/assembly/necklace/PXL_20220701_220132471.jpeg" class="img-thumbnail" />
 

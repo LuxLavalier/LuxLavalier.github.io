@@ -4,7 +4,7 @@ title: Mapper
 ---
 
 You shouldn't need to change anything on the **Mapper** tab.
-This page just contains the pixel map, which is the location of each of your Lux Lavalier's LEDs. It's used by the Pixelblaze controller in patterns.
+This page contains the pixel map, which is the location of each of your Lux Lavalier's LEDs. It's used by the Pixelblaze controller in patterns.
 
 If you ever do need to reset to the Lux Lavalier's default map, use these values:
 

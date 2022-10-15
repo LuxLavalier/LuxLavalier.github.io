@@ -3,7 +3,7 @@ layout: page
 title: Writing your own patterns
 ---
 
-The Pixelblaze controller inside your Lux Lavalier makes it easy for you to write your own patterns! In fact, you can view and edit the code for every pattern included with it.
+The Pixelblaze controller inside your Lux Lavalier allows you to write your own patterns! In fact, you can view and edit the code for every pattern included with it.
 
 Let's get started writing your first pattern.
 
@@ -221,7 +221,7 @@ should give you a rainbow that scrolls from left to right:
 </div>
 <br />
 
-To make it change direction, just subtract instead of adding time:
+To make it change direction, subtract instead of adding time:
 
       hsv(x - time(.1), 1, 1)
 
@@ -271,7 +271,7 @@ You should see semi-circular bands of rainbow!
 
    <img src="/assets/img/code/radius.jpg" class="img-thumbnail" style="width: 240px" />
 
-The `hypot` function calculates the radius of the current point, or the distance of the point `(x,y)` from the origin `(0,0)` (the upper-left corner). If we want the origin in the center of the display, we just change the second line to:
+The `hypot` function calculates the radius of the current point, or the distance of the point `(x,y)` from the origin `(0,0)` (the upper-left corner). If we want the origin in the center of the display, we change the second line to:
 
       h = hypot(x - .5, y - .5)
 

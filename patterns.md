@@ -17,7 +17,7 @@ The sequencer can be configured via the web interface over wi-fi in the followin
 
 ---
 
-The Pixelblaze controller inside your Lux Lavalier makes it easy for you to write your own patterns! In fact, you can view and edit the code for every pattern included with it.
+The Pixelblaze controller inside your Lux Lavalier allows you to write your own patterns! In fact, you can view and edit the code for every pattern included with it.
 
 ##### Next step: [Writing your own patterns](/code)
 

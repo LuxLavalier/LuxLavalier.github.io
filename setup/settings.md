@@ -31,7 +31,7 @@ These settings should be set to the following values to increase the battery lif
 - CPU Speed: 80MHz (Lowest power)
 - Disable WiFi on startup: keep this checked.
 
-  If you need to connect to your Lux Lavalier to change patterns or settings, just press and hold the button on the back for 5 seconds. The status LED on the back will flash twice, and wi-fi will now enabled until power is disconnected. Once you're done making changes, disconnect power for a moment, then reconnect it to turn wi-fi off and conserve battery power.
+  If you need to connect to your Lux Lavalier to change patterns or settings, press and hold the button on the back for 5 seconds. The status LED on the back will flash twice, and wi-fi will now enabled until power is disconnected. Once you're done making changes, disconnect power for a moment, then reconnect it to turn wi-fi off and conserve battery power.
 
 ---
 
