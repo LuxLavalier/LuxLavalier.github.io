@@ -15,18 +15,21 @@
         {%- if member.facebook_username -%}
         <a
           href="https://www.facebook.com/{{ member.facebook_username| cgi_escape | escape }}"
+          title="Follow {{ member.name }} on Facebook"
         >
-          <i class="bi bi-instagram"></i>
+          <i class="bi bi-facebook"></i>
         </a>
         {%- endif -%} {%- if member.github_username -%}
         <a
           href="https://github.com/{{ member.github_username| cgi_escape | escape }}"
+          title="Follow {{ member.name }} on GitHub"
         >
           <i class="bi bi-github"></i>
         </a>
         {%- endif -%} {%- if member.instagram_username -%}
         <a
           href="https://instagram.com/{{ member.instagram_username| cgi_escape | escape }}"
+          title="Follow {{ member.name }} on Instagram"
         >
           <i class="bi bi-instagram"></i>
         </a>
@@ -34,18 +37,21 @@
         member.mastodon_instance -%}
         <a
           href="https://{{ member.mastodon_instance| cgi_escape | escape}}/@{{member.mastodon_username}}"
+          title="Follow {{ member.name }} on Mastodon"
         >
           <i class="bi bi-mastodon"></i>
         </a>
         {%- endif -%} {%- if member.twitter_username -%}
         <a
           href="https://www.twitter.com/{{ member.twitter_username| cgi_escape | escape }}"
+          title="Follow {{ member.name }} on Twitter"
         >
           <i class="bi bi-twitter"></i>
         </a>
         {%- endif -%} {%- if member.youtube_username -%}
         <a
           href="https://youtube.com/{{ member.youtube_username| cgi_escape | escape }}"
+          title="Follow {{ member.name }} on YouTube"
         >
           <i class="bi bi-youtube"></i>
         </a>
