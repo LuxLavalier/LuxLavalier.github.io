@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writing your own patterns
+title: Writing Your Own Patterns&#x3A; Part 1
 ---
 
 The Pixelblaze controller inside your Lux Lavalier allows you to write your own patterns! In fact, you can view and edit the code for every pattern included with it.
@@ -9,7 +9,7 @@ Let's get started writing your first pattern.
 
 ---
 
-#### Table of contents
+### Table of contents
 
 * [The `render` function](#the-render-function)
 * [RGB Colors and the `rgb` function](#rgb-colors-and-the-rgb-function)
@@ -45,13 +45,13 @@ Explanation time!
 
 ---
 
-#### The `render` Function
+### The `render` Function
 
 The render function gets called repeatedly, once for each pixel, in order and then wraps from the end back to the beginning. The Lux Lavalier has 64 pixels, so it gets called 64 times. Inside the render function above, we're calling another function, that is included with the Pixelblaze, called `rgb`.
 
 ---
 
-#### RGB Colors and the `rgb` function
+### RGB Colors and the `rgb` function
 
 Each pixel internally has three LEDs: Red, Green, and Blue. We can directly control those tiny little individual LEDs inside each pixel with the `rgb` function. The numbers passed to the function should be between 0.0 and 1.0. A value of 0 turns that LED off completely. A value of 1 turns that LED on completely. Any number in between turns it on a percentage. A value of 0.1 will turn it on at 10% brightness.
 
@@ -210,7 +210,7 @@ Notice that we changed from using the `render` function to the `render2D` functi
 
 We can animate these two dimensional rainbows the same way we did before, with time:
 
-      hsv(x + time(.1), 1, 1)
+    hsv(x + time(.1), 1, 1)
 
 should give you a rainbow that scrolls from left to right:
 
@@ -223,7 +223,7 @@ should give you a rainbow that scrolls from left to right:
 
 To make it change direction, subtract instead of adding time:
 
-      hsv(x - time(.1), 1, 1)
+    hsv(x - time(.1), 1, 1)
 
 <div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
   <video poster="/assets/img/code/x.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
@@ -234,7 +234,7 @@ To make it change direction, subtract instead of adding time:
 
 To make it scroll vertically, change `x` to `y`:
 
-      hsv(y + time(.1), 1, 1)
+    hsv(y + time(.1), 1, 1)
 
 <div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
   <video poster="/assets/img/code/y.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
@@ -245,7 +245,7 @@ To make it scroll vertically, change `x` to `y`:
 
 Diagonal:
 
-      hsv(x + y + time(.1), 1, 1)
+    hsv(x + y + time(.1), 1, 1)
 
 <div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
   <video poster="/assets/img/code/xy.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
@@ -273,13 +273,13 @@ You should see semi-circular bands of rainbow!
 
 The `hypot` function calculates the radius of the current point, or the distance of the point `(x,y)` from the origin `(0,0)` (the upper-left corner). If we want the origin in the center of the display, we change the second line to:
 
-      h = hypot(x - .5, y - .5)
+    h = hypot(x - .5, y - .5)
 
    <img src="/assets/img/code/radius-center.jpg" class="img-thumbnail" style="width: 240px" />
 
 Notice we're only getting half of the rainbow, from red to yellow, green, and blue? That's because the radius is only half of the circle. Multiply by 2 to get the full circular rainbow:
 
-      h = hypot(x - .5, y - .5) * 2
+    h = hypot(x - .5, y - .5) * 2
 
    <img src="/assets/img/code/radius-center-full.jpg" class="img-thumbnail" style="width: 240px" />
 
@@ -300,7 +300,7 @@ Make it move by adding time:
 
 Flip the direction and make it move outward by subtracting time:
 
-      h = hypot(x - .5, y - .5) * 2 - t
+    h = hypot(x - .5, y - .5) * 2 - t
 
 <div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
   <video poster="/assets/img/code/radius-center.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
@@ -339,7 +339,7 @@ Line 2 converts the radians to degrees, ranging from 0 to 1 (instead of 0 to 360
 
 Let's move it to the center, by changing line 3 to offset it (like we did for the radius example):
 
-      radians = atan2(y - .5, x - .5)
+    radians = atan2(y - .5, x - .5)
 
    <img src="/assets/img/code/angle-center.jpg" class="img-thumbnail" style="width: 240px" />
 
@@ -363,7 +363,7 @@ Here's the complete code:
 </div>
 <br />
 
-Note that this angular rainbow is different than where we started, using the pixels' index, which zig-zags back and forth, inward and outward, in one direction around the display. And with the pixels' angles, we can easily rotate the rainbow in any direction.
+Note that this angular rainbow is different than where we started, using the pixels' index, which zig-zags back and forth, inward and outward, in one direction around the display. And with the pixels' angles, we can rotate the rainbow in any direction.
 
 ---
 
@@ -386,3 +386,5 @@ Next steps:
 * Join the [ElectroMage Forum](https://forum.electromage.com) where Pixelblaze users help each other with questions, share amazing patterns, and more!
 
 We'll be back with more pattern tutorials! We'll cover the `beforeRender` function for faster and more interesting patterns. And Pixelblaze will soon be adding support for custom color palettes, to make going beyond rainbows easier!
+
+[Writing Your Own Patterns&#x3A; Part 2](/code/part2)
