@@ -70,6 +70,17 @@ a.link-light:hover {
   color: rgba(255, 255, 255, 0.5) !important
 }
 
+pre {
+  background-color: rgb(23, 27, 31);
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
 code {
   color: rgba(255, 255, 255, 0.75)
+}
+
+.img-thumbnail {
+  background-color: #000;
+  border-color: #000; 
 }
