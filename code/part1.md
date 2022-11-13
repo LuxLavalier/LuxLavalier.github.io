@@ -101,7 +101,7 @@ A saturation of zero will be white, regardless of the hue. A saturation of 1 is 
 The third and final number (value) controls the brightness (or inversely blackness) of the color:
 
 <a title="HSV_color_solid_cylinder.png: SharkD
-derivative work: SharkD  Talk, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:HSV_color_solid_cylinder_saturation_gray.png"><img class="img-thumbnail" style="width: 240px" alt="HSV color solid cylinder saturation gray" src="assets/img/code/hsv.png"></a>
+derivative work: SharkD  Talk, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:HSV_color_solid_cylinder_saturation_gray.png"><img class="img-thumbnail" style="width: 240px" alt="HSV color solid cylinder saturation gray" src="/assets/img/code/hsv.png"></a>
 
 A value of zero will be black, regardless of the hue or saturation. A value of 1 will be fully bright. In between are darker colors.
 

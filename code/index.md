@@ -12,16 +12,16 @@ title: Writing your own patterns
 
 #### Part 1
 
-* [The render function](/code/part1/#the-render-function)
-* [RGB Colors and the rgb function](/code/part1/#rgb-colors-and-the-rgb-function)
-* [HSV Colors and the hsv function](/code/part1/#hsv-colors-and-the-hsv-function)
-* [The index variable](/code/part1/#the-index-variable)
-* [The pixelCount variable](/code/part1/#the-pixelcount-variable)
-* [Animation](/code/part1/#animation)
-* [The time function](/code/part1/#the-time-function)
-* [XY Mapping and the render2D function](/code/part1/#xy-mapping-and-the-render2d-function)
-* [Radius](/code/part1/#radius)
-* [Angle](/code/part1/#angle)
+* [The render function](/code/part1#the-render-function)
+* [RGB Colors and the rgb function](/code/part1#rgb-colors-and-the-rgb-function)
+* [HSV Colors and the hsv function](/code/part1#hsv-colors-and-the-hsv-function)
+* [The index variable](/code/part1#the-index-variable)
+* [The pixelCount variable](/code/part1#the-pixelcount-variable)
+* [Animation](/code/part1#animation)
+* [The time function](/code/part1#the-time-function)
+* [XY Mapping and the render2D function](/code/part1#xy-mapping-and-the-render2d-function)
+* [Radius](/code/part1#radius)
+* [Angle](/code/part1#angle)
 
 #### Part 2
 
