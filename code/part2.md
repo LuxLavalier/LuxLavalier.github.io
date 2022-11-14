@@ -12,12 +12,11 @@ Let's pick up from where we left off in [Part 1](/code/part1)
 * [The `beforeRender` function](#the-beforerender-function)
 * [Value, Brightness, and Gamma Correction](#value-brightness-and-gamma-correction)
 * [Waves](#waves)
-* [Time: A Sawtooth Wave](#time-a-sawtooth-wave)
-* [Triangle](#triangle)
-* [(Sine) Wave](#sine-wave)
-* [Playing With Waves](#playing-with-waves)
+* [Sawtooth Wave (Time)](#sawtooth-wave-time)
+* [Triangle Wave](#triangle-wave)
+* [Sine Wave](#sine-wave)
 * [Polar Waves](#polar-waves)
-* [Noise](#noise)
+* [Perlin Noise](#perlin-noise)
 * [Next Steps](#next-steps)
 
 ---
@@ -39,11 +38,12 @@ In the introduction, we used the `time` function to make patterns move. In [Part
       hsv(h, 1, 1)
     }
 
-So far all of the patterns we've created turn on all the pixels at full brightness. Let's add some variety.
 
 ---
 
 ### Value, Brightness, and Gamma Correction
+
+So far all of the patterns we've created turn on all the pixels at full brightness. Let's add some variety.
 
 Type (or copy and paste) the following code into the editor:
 
@@ -93,7 +93,38 @@ The final code:
 
 ### Waves
 
-We've only been using the `time` function to add motion so far. Let's try other ways.
+We've only been using the `time` function to add motion so far.
+
+Let's explore some different waveforms and how to generate them.
+
+---
+
+### Sawtooth Wave (Time)
+
+The `time` function that we've been using creates a sawtooth wave between 0.0 and 1.0 that loops about every `65.536 * interval` seconds (use `0.015` for approximately 1 second).
+
+<img src="/assets/img/code/sawtooth-wave.png" class="img-thumbnail" style="width: 240px" />
+
+Let's use time to make a moving rainbow:
+
+    export function beforeRender(delta) {
+      t = time(.1)
+    }
+
+    export function render2D(index, x, y) {
+      h = x + t
+      hsv(h, 1, 1)
+    }
+
+We see it as a continuously scrolling rainbow, because the time wave wraps from 1.0 to 0.0, and red is at both ends of the rainbow (0.0 and 1.0).
+
+---
+
+### Triangle Wave
+
+The `triangle` function converts a sawtooth wave between 0.0 and 1.0, like that returned by the `time` function, to a triangle wave between 0.0 and 1.0. The value passed to `triangle` is automatically wrapped between 0.0 and 1.0.
+
+<img src="/assets/img/code/triangle-wave.png" class="img-thumbnail" style="width: 240px" />
 
 Add the following line inside the `beforeRender` function:
 
@@ -101,103 +132,7 @@ Add the following line inside the `beforeRender` function:
 
 And then change the first line in `render2D`:
 
-    v = x + w
-
-Notice now instead of constantly scrolling in one direction, it now moves back and forth!
-
-Let's explore some different waveforms and how to generate them.
-
----
-
-### Time: A Sawtooth Wave
-
-The `time` function that we've been using creates a sawtooth wave between 0.0 and 1.0 that loops about every `65.536 * interval` seconds (use `0.15` for approximately 1 second).
-
-      /|  /|  /|
-     / | / | / |
-    /  |/  |/  |
-
----
-
-### Triangle
-
-The `triangle` function converts a sawtooth wave between 0.0 and 1.0, like that returned by the `time` function, to a triangle wave between 0.0 and 1.0. The value passed to `triangle` is automatically wrapped between 0.0 and 1.0.
-
-      /\    /\    /\  
-     /  \  /  \  /  \ 
-    /    \/    \/    \
-
----
-
-### (Sine) Wave
-
-The `wave` function converts a sawtooth wave between 0.0 and 1.0, like that returned by the `time` function, to a smooth sine wave between 0.0 and 1.0. The value passed to `wave` is automatically wrapped between 0.0 and 1.0.
-
-<img src="/assets/img/code/sine-wave.png" class="img-thumbnail" style="width: 240px" />
-
----
-
-### Playing with waves
-
-Let's get back to playing.
-
-Try changing line in `beforeRender` from `triangle` to `wave`:
-
-    w = wave(t)
-
-Notice the wave moves back and forth more smoothly, slowing as it reaches the sides before reversing direction.
-
-Let's make it more interesting by changing the hue:
-
-    h = y + w
-    v = v * v * v
-    hsv(h, 1, v)
-
-The complete code so far:
-
-    export function beforeRender(delta) {
-      t = time(.1)
-      w = wave(t)
-    }
-
-    export function render2D(index, x, y) {
-      h = y + w // scroll hue vertically
-
-      v = x + w // scroll value horizontally
-      v = v % 1 // wrap value from 1.0 to 0.0 (value does not wrap automatically)
-      v = v * v * v // increase contrast
-      
-      hsv(h, 1, v)
-    }
-
----
-
-### Polar Waves
-
-Like before, we can switch from Cartesian XY coordinates to polar coordinates.
-
-    export function beforeRender(delta) {
-      t = time(.1)
-      w = triangle(t)
-    }
-
-    export function render2D(index, x, y) {
-      radius = hypot(x - .5, y - .5)
-      
-      h = radius * 2
-      v = radius * 2 * w
-      
-      hsv(h, 1, v)
-    }
-
-Try changing it so the hue moves but the value doesn't:
-
-    h = radius * 2 * w
-    v = radius * 2
-
-Flip the value so the center is bright and the outside is dark:
-
-    v = 1 - (radius * 2)
+    h = x + w
 
 The complete code:
 
@@ -207,43 +142,159 @@ The complete code:
     }
 
     export function render2D(index, x, y) {
+      h = x + w
+      hsv(h, 1, 1)
+    }
+
+Notice now instead of constantly scrolling in one direction, it now moves back and forth!
+
+---
+
+### Sine Wave
+
+The `wave` function converts a sawtooth wave between 0.0 and 1.0, like that returned by the `time` function, to a smooth sine wave between 0.0 and 1.0. The value passed to `wave` is automatically wrapped between 0.0 and 1.0.
+
+<img src="/assets/img/code/sine-wave.png" class="img-thumbnail" style="width: 240px" />
+
+Try changing line in `beforeRender` from `triangle` to `wave`:
+
+    w = wave(t)
+
+The complete code:
+
+    export function beforeRender(delta) {
+      t = time(.1)
+      w = wave(t)
+    }
+
+    export function render2D(index, x, y) {
+      h = x + w
+      hsv(h, 1, 1)
+    }
+
+Notice the wave moves back and forth more smoothly, slowing as it reaches the sides before reversing direction.
+
+---
+
+### Polar Waves
+
+Like in Part 1, we can switch from Cartesian XY coordinates to polar coordinates.
+
+    export function beforeRender(delta) {
+      t = time(.1)
+      w = wave(t)
+    }
+
+    export function render2D(index, x, y) {
       radius = hypot(x - .5, y - .5)
-      
-      h = radius * 2 * w
-      v = 1 - (radius * 2)
-      v = v * v * v
-      
+      h = r + w
+      v = 1
       hsv(h, 1, v)
+    }
+
+Lets chang it so the value moves but the hue doesn't:
+
+    export function beforeRender(delta) {
+      t = time(.1)
+    }
+
+    export function render2D(index, x, y) {
+      radius = hypot(x - .5, y - .5)
+      w = wave(t + r)
+      h = 1
+      v = w
+      hsv(h, 1, v * v * v)
+    }
+
+Flip the direction:
+
+    w = wave(t - r)
+
+The complete code:
+
+    export function beforeRender(delta) {
+      t = time(.1)
+    }
+
+    export function render2D(index, x, y) {
+      radius = hypot(x - .5, y - .5)
+      w = wave(t - r)
+      h = 1
+      v = w
+      hsv(h, 1, v * v * v)
     }
 
 ---
 
-### Noise
+### Perlin Noise
 
-`setPerlinWrap(x, y, z)`
-
-Causes Perlin functions to wrap at the given integer intervals between 2 and 256. Useful for creating textures that can repeat smoothly, while controlling density.
+All of the above wave functions are symmetrical waveforms.  Let's explore a random, asymmetrical, irregular waveform.
 
 `perlin(x, y, z, seed)`
 
-Generates 3D Perlin noise. Every integer value produces a different random result, with smooth transitions between them.
+The `perlin` function generates random 3D dimensional Perlin noise waveform. Every integer value produces a different random result, with smooth transitions between them. It returns a value ranging from -1.0 to 1.0.
 
-`perlinFbm(x, y, z, lacunarity, gain, octaves)`
+<img src="/assets/img/code/perlin-wave.png" class="img-thumbnail" style="width: 240px" />
 
-Generates 3D fractal Brownian motion. The lacunarity controls the distance between octaves and should be set to 2 or another integer value if wrapping is desired. The gain controls the strength between each octave, try values around 0.5-0.8.
+Try this code:
 
-`perlinRidge(x, y, z, lacunarity, gain, offset, octaves)`
+    export function beforeRender(delta) {
+      t = time(7) // very slow sawtooth wave, cycles every 458.752 seconds!
+      noiseTime = t * 256 // noise inputs range from 0 to 255
+      n = perlin(noiseTime, 0, 0, 0) // perlin returns values ranging from -1.0 to 1.0
+      n = (n * 0.5) + 0.5 // adjust them to 0.0 to 1.0
+    }
 
-Generates 3D fractal ridged Perlin noise. The lacunarity controls the distance between octaves and should be set to 2 or another integer value if wrapping is desired. The gain controls the strength between each octave, try values around 0.5-0.8. The offset is used to invert the ridges, values around 1.0 work well.
+    export function render2D(index, x, y) {
+      h = x - n
+      hsv(h, 1, 1)
+    }
 
-`perlinTurbulence(x, y, z, lacunarity, gain, offset, octaves)`
+Notice the rainbow now moves in a much less regular, predictable way.
 
-Generates 3D fractal turbulent Perlin noise. The lacunarity controls the distance between octaves and should be set to 2 or another integer value if wrapping is desired. The gain controls the strength between each octave, try values around 0.5-0.8.
+Perlin is different in another way from the other waveforms we've tried so far: it's a three-dimensional waveform! Lets use this to make a more interesting rainbow:
 
-More noise details coming soon...
+    export function beforeRender(delta) {
+      t = time(7)
+      noiseTime = t * 256
+    }
+
+    export function render2D(index, x, y) {
+      x2 = x + noiseTime
+      y2 = y
+      
+      n = perlin(x2, y2, 0, 0) // perlin returns values ranging from -1.0 to 1.0
+      n = (n * 0.5) + 0.5 // adjust them to 0.0 to 1.0
+      h = n
+      hsv(h, 1, 1)
+    }
+
+We've mapped the three-dimensional Perlin noise waveform to the hues for each pixel, using the pixels' two dimensional XY coordinates!
+
+We can swap XY for polar coordinates:
+
+    export function beforeRender(delta) {
+      t = time(7)
+      noiseTime = t * 256
+    }
+
+    export function render2D(index, x, y) {
+      radius = hypot(x - .5, y - .5)
+      
+      radians = atan2(y - .5, x - .5)
+      angle = radians / PI / 2
+      
+      x2 = angle + noiseTime
+      y2 = radius * 2
+      
+      n = perlin(x2, y2, 0, 0) // perlin returns values ranging from -1.0 to 1.0
+      n = (n * 0.5) + 0.5 // adjust them to 0.0 to 1.0
+      h = n
+      hsv(h, 1, 1)
+    }
 
 ---
 
 ### Next Steps
 
-Next steps: coming soon...
+Coming soon...
