@@ -38,6 +38,11 @@ In the introduction, we used the `time` function to make patterns move. In [Part
       hsv(h, 1, 1)
     }
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/x.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/x.mp4" type="video/mp4">
+  </video>
+</div>
 
 ---
 
@@ -54,10 +59,17 @@ Type (or copy and paste) the following code into the editor:
     export function render2D(index, x, y) {
       v = x + t // scroll value horizontally
       v = v % 1 // wrap value from 1.0 to 0.0 (value does not wrap automatically)
-      hsv(1, 1, v)
+      hsv(x, 1, v)
     }
 
-Note that we now have a slightly dark line scrolling horizontally.
+Note that we now have a static rainbow with a slightly dark line scrolling horizontally:
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/time-no-gamma.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 Value (v) is the amount of light energy. You might think that a value of 0.5 would be half as bright as 1.0, but humans actually perceive brightness on a power-law scale (search for "gamma correction" for more information).
 This means that our eyes perceive 0.25 as about half as bright as 1.0. 
@@ -66,15 +78,29 @@ To make the value change more noticeable, let's square it.
 
 Change the line to the following:
 
-    hsv(1, 1, v * v)
+    hsv(x, 1, v * v)
 
 Notice the value change is more pronounced? We've squared the value. Value is between 0.0 and 1.0. So a value of 0.5, for example, when squared becomes 0.25. A value of 0.6 becomes 0.36, etc. Squaring the fractional values increases the contrast.
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/time-gamma-2.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
 Try cubing the value:
 
-    hsv(1, 1, v * v * v)
+    hsv(x, 1, v * v * v)
 
-and the contrast increases even more. Notice that the brightest part stays just as bright, and the darkest part just as dark, but the values in between become more gradual. That's because 1.0 squared is still 1.0, and 0.0 squared equals 0.0.
+and the contrast increases even more. Notice that the brightest part stays just as bright, and the darkest part just as dark, but the values in between become more gradual. That's because 1.0 cubed is still 1.0, and 0.0 cubed equals 0.0.
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/time-gamma-3.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 The final code: 
 
@@ -86,7 +112,7 @@ The final code:
       v = x + t // scroll value horizontally
       v = v % 1 // wrap value from 1.0 to 0.0 (value does not wrap automatically)
       v = v * v * v // increase contrast
-      hsv(1, 1, v)
+      hsv(x, 1, v)
     }
 
 ---
@@ -118,6 +144,12 @@ Let's use time to make a moving rainbow:
 
 We see it as a continuously scrolling rainbow, because the time wave wraps from 1.0 to 0.0, and red is at both ends of the rainbow (0.0 and 1.0).
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video poster="/assets/img/code/x.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/x.mp4" type="video/mp4">
+  </video>
+</div>
+
 ---
 
 ### Triangle Wave
@@ -148,6 +180,13 @@ The complete code:
 
 Notice now instead of constantly scrolling in one direction, it now moves back and forth!
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/rainbow-triangle-wave.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
 ---
 
 ### Sine Wave
@@ -174,6 +213,13 @@ The complete code:
 
 Notice the wave moves back and forth more smoothly, slowing as it reaches the sides before reversing direction.
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/rainbow-sine-wave.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
 ---
 
 ### Polar Waves
@@ -187,12 +233,19 @@ Like in Part 1, we can switch from Cartesian XY coordinates to polar coordinates
 
     export function render2D(index, x, y) {
       radius = hypot(x - .5, y - .5)
-      h = r + w
+      h = radius + w
       v = 1
       hsv(h, 1, v)
     }
 
-Lets chang it so the value moves but the hue doesn't:
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/rainbow-sine-polar.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
+Lets change it so the value moves but the hue doesn't:
 
     export function beforeRender(delta) {
       t = time(.1)
@@ -200,15 +253,29 @@ Lets chang it so the value moves but the hue doesn't:
 
     export function render2D(index, x, y) {
       radius = hypot(x - .5, y - .5)
-      w = wave(t + r)
-      h = 1
+      w = wave(t + radius)
+      h = radius * 2
       v = w
       hsv(h, 1, v * v * v)
     }
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/value-sine-polar.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
 Flip the direction:
 
-    w = wave(t - r)
+    w = wave(t - radius)
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/value-rainbow-outward.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 The complete code:
 
@@ -218,8 +285,8 @@ The complete code:
 
     export function render2D(index, x, y) {
       radius = hypot(x - .5, y - .5)
-      w = wave(t - r)
-      h = 1
+      w = wave(t - radius)
+      h = radius * 2
       v = w
       hsv(h, 1, v * v * v)
     }
@@ -252,6 +319,13 @@ Try this code:
 
 Notice the rainbow now moves in a much less regular, predictable way.
 
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/rainbow-perlin-wave.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
+
 Perlin is different in another way from the other waveforms we've tried so far: it's a three-dimensional waveform! Lets use this to make a more interesting rainbow:
 
     export function beforeRender(delta) {
@@ -270,6 +344,13 @@ Perlin is different in another way from the other waveforms we've tried so far: 
     }
 
 We've mapped the three-dimensional Perlin noise waveform to the hues for each pixel, using the pixels' two dimensional XY coordinates!
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/perlin-noise.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 We can swap XY for polar coordinates:
 
@@ -292,6 +373,13 @@ We can swap XY for polar coordinates:
       h = n
       hsv(h, 1, 1)
     }
+
+<div class="ratio ratio-1x1 img-thumbnail" style="width: 240px">
+  <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" loading="lazy">
+    <source src="/assets/img/code/perlin-noise-polar.mp4" type="video/mp4">
+  </video>
+</div>
+<br />
 
 ---
 

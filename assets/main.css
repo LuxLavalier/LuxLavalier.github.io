@@ -59,15 +59,11 @@ body {
 
 a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.75)
+  color: rgb(0, 175, 244)
 }
 
 a:hover {
-  color: rgba(255, 255, 255, 0.5)
-}
-
-a.link-light:hover {
-  color: rgba(255, 255, 255, 0.5) !important
+  color: rgba(0, 175, 244, 0.5);
 }
 
 pre {
