@@ -3,6 +3,8 @@ layout: page
 title: Writing your own patterns
 ---
 
+The Pixelblaze controller inside your Lux Lavalier allows you to write your own patterns! In fact, you can view and edit the code for every pattern included with it.
+
 - ##### [Part 1](/code/part1)
 - ##### [Part 2](/code/part2)
 

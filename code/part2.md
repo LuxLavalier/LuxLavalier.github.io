@@ -385,4 +385,4 @@ We can swap XY for polar coordinates:
 
 ### Next Steps
 
-Coming soon...
+We'll be back with more pattern tutorials! We'll cover custom color palettes, to make going beyond rainbows easier!

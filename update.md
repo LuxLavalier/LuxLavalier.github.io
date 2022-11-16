@@ -30,7 +30,18 @@ Now you can add patterns that use the new features:
 1. Once the pattern loads, click the `Save New` button.
 1. Repeat the steps above for any other patterns you want to add.
 
-These patterns have all been tested and work great on Lux Lavalier:
+The patterns below have all been tested and work great on Lux Lavalier.
+
+You can also find even more Pixelblaze patterns at [electromage.com/patterns](https://electromage.com/patterns)
+
+Please note that the patterns on electromage.com are meant generally for any Pixelblaze, and may
+not be designed to work or look great on your Lux Lavalier.
+
+---
+
+##### Next step: [Patterns](/patterns)
+
+---
 
 {% for pattern in site.data.patterns %}
 
@@ -53,8 +64,3 @@ These patterns have all been tested and work great on Lux Lavalier:
 {% endif %}
 
 {% endfor %}
-
-You can also find even more Pixelblaze patterns at [electromage.com/patterns](https://electromage.com/patterns)
-
-Please note that the patterns on electromage.com are meant generally for any Pixelblaze, and may
-not be designed to work or look great on your Lux Lavalier.

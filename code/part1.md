@@ -385,6 +385,4 @@ Next steps:
 
 * Join the [ElectroMage Forum](https://forum.electromage.com) where Pixelblaze users help each other with questions, share amazing patterns, and more!
 
-We'll be back with more pattern tutorials! We'll cover the `beforeRender` function for faster and more interesting patterns. And Pixelblaze will soon be adding support for custom color palettes, to make going beyond rainbows easier!
-
 [Writing Your Own Patterns&#x3A; Part 2](/code/part2)
