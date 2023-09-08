@@ -381,7 +381,7 @@ Next steps:
 
 * Go to the `Patterns` page and click the `Edit` button to the right of every pattern to view the code for any of the patterns! Or use the `Clone` button to edit a copy of the pattern, leaving the current one unchanged.
 
-* If you get stuck, need help, or are unsure how to create the pattern of your dreams, reach out to us on Twitter: [@LuxLavalier](https://twitter.com/LuxLavalier)
+* If you get stuck, need help, or are unsure how to create the pattern of your dreams, reach out to one of us at any of our social links below.
 
 * Join the [ElectroMage Forum](https://forum.electromage.com) where Pixelblaze users help each other with questions, share amazing patterns, and more!
 

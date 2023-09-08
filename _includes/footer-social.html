@@ -41,13 +41,6 @@
         >
           <i class="bi bi-mastodon"></i>
         </a>
-        {%- endif -%} {%- if member.twitter_username -%}
-        <a
-          href="https://www.twitter.com/{{ member.twitter_username| cgi_escape | escape }}"
-          title="Follow {{ member.name }} on Twitter"
-        >
-          <i class="bi bi-twitter"></i>
-        </a>
         {%- endif -%} {%- if member.youtube_username -%}
         <a
           href="https://youtube.com/{{ member.youtube_username| cgi_escape | escape }}"
