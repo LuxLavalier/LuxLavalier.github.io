@@ -9,8 +9,8 @@ Lux Lavalier is now available for purchase on the following sites:
   
   [ElectroMage Shop](https://shop.electromage.com/products/lux-lavalier)
 
-  <a href="https://www.tindie.com/products/27123"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="Evil Genius Labs on Tindie" height="63"></a>
+  <a href="https://lectronz.com/products/lux-lavalier-wearable-light-art-pendant" alt="Buy it on Lectronz"><img src="https://lectronz-images.b-cdn.net/static/badges/buy-it-on-lectronz-small.png" /></a>
   
-  [Evil Genius Labs on Tindie](https://www.tindie.com/products/27123/)
+  [Evil Genius Labs on Lectronz](https://lectronz.com/products/lux-lavalier-wearable-light-art-pendant)
 
-If they're sold out, don't despair!  We'll be listing more small batches in the coming weeks as we get parts in to make more.  If you've joined the waitlist on Tindie, you'll continue to be notified as they come back in stock until you're finally able to buy one of your own.
+If they're sold out, don't despair!  We'll be listing more small batches in the coming weeks as we get parts in to make more.  If you've joined the waitlist on Lectronz, you'll continue to be notified as they come back in stock until you're finally able to buy one of your own.
