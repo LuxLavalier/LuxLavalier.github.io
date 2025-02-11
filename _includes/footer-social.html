@@ -12,12 +12,16 @@
       </li>
       {%- endif -%}
       <li>
-        {%- if member.facebook_username -%}
-        <a
-          href="https://www.facebook.com/{{ member.facebook_username| cgi_escape | escape }}"
-          title="Follow {{ member.name }} on Facebook"
-        >
-          <i class="bi bi-facebook"></i>
+        {%- if member.mastodon_username and
+        member.mastodon_instance -%}
+        <a href="https://{{ member.mastodon_instance| cgi_escape | escape}}/@{{member.mastodon_username}}"
+          title="Follow {{ member.name }} on Mastodon">
+          <i class="bi bi-mastodon"></i>
+        </a>
+        {%- endif -%} {%- if member.bsky_username -%}
+        <a href="https://bsky.app/profile/{{member.mastodon_username}}"
+          title="Follow {{ member.name }} on Bluesky">
+          <i class="bi bi-cloud-sun-fill"></i>
         </a>
         {%- endif -%} {%- if member.github_username -%}
         <a
@@ -32,14 +36,6 @@
           title="Follow {{ member.name }} on Instagram"
         >
           <i class="bi bi-instagram"></i>
-        </a>
-        {%- endif -%} {%- if member.mastodon_username and
-        member.mastodon_instance -%}
-        <a
-          href="https://{{ member.mastodon_instance| cgi_escape | escape}}/@{{member.mastodon_username}}"
-          title="Follow {{ member.name }} on Mastodon"
-        >
-          <i class="bi bi-mastodon"></i>
         </a>
         {%- endif -%} {%- if member.youtube_username -%}
         <a
