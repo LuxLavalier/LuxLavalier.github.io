@@ -3,12 +3,39 @@ layout: page
 title: Battery Instructions
 ---
 
+You may have received one of the following batteries:
+
+- [USB-C rechargeable battery & cable](#usb-c-rechargeable-battery--cable)
+- [Separate battery & charger](#separate-battery--charger)
+
+#### USB-C rechargeable battery & cable
+
+<img src="/assets/img/setup/battery-usbc-1.jpg" class="img-thumbnail" />
+
+1. The battery may have a protective film or tape covering one or both of the contacts on the ends
+   that should be removed before proceeding.
+
+1. Your battery is very likely shipped not fully-charged.
+
+1. Connect the battery to a USB power adapter or USB port on your computer using any USB-C cable.
+   A short USB-C cable is included.
+
+   <img src="/assets/img/setup/battery-usbc-2.jpg" class="img-thumbnail" />
+
+1. Wait until your battery is fully-charged. The light on the end is red while charging, and green when fully charged.
+
+   <img src="/assets/img/setup/battery-usbc-3.jpg" class="img-thumbnail" />
+
+   <img src="/assets/img/setup/battery-usbc-4.jpg" class="img-thumbnail" />
+
+#### Separate battery & charger
+
 ##### Charging the battery:
 
 1. The battery may have a protective film or tape covering one or both of the contacts on the ends
    that should be removed before proceeding.
 
-1. Your battery is very likely not fully-charged.
+1. Your battery is very likely shipped not fully-charged.
    Carefully note the charger and battery's correct direction, orientation, and polarity.
 
    <img src="/assets/img/setup/battery-1.jpg" class="img-thumbnail" />
