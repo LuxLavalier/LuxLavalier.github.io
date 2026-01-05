@@ -9,7 +9,7 @@ Lux Lavalier is available for purchase on the following sites:
   <img src="https://www.evilgeniuslabs.org/images/egl-light-buib-2-white.png" style="width: 70px" />
 </a>
 
-[Evil Genius Labs store on Lectronz](https://shop.electromage.com/products/lux-lavalier)
+[Evil Genius Labs store on Lectronz](https://lectronz.com/products/lux-lavalier-wearable-light-art-pendant)
 
 <a href="https://lectronz.com/products/lux-lavalier-wearable-light-art-pendant" alt="Buy it on Lectronz"><img src="https://lectronz-images.b-cdn.net/static/badges/buy-it-on-lectronz-small.png" /></a>
 
