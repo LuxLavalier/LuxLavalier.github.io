@@ -47,7 +47,7 @@ Explanation time!
 
 ### The `render` Function
 
-The render function gets called repeatedly, once for each pixel, in order and then wraps from the end back to the beginning. The Lux Lavalier has 64 pixels, so it gets called 64 times. Inside the render function above, we're calling another function, that is included with the Pixelblaze, called `rgb`.
+The render function gets called repeatedly, once for each pixel, in order and then wraps from the end back to the beginning. The Lux Lavalier has 64 pixels, so it gets called 64 times. Inside the render function above, we're calling another function that is included with the Pixelblaze, called `rgb`.
 
 ---
 
