@@ -12,7 +12,16 @@ Open your Lux Lavalier's web app and click on the **Settings** tab.
   <img src="/assets/img/setup/settings.jpeg" class="img-thumbnail" style="width: 240px" />
 </a>
 
-We won't go over every setting on this page, just the ones that are important for the use of your Lux Lavalier.
+If needed, all of these settings can be restored automatically from a backup file:
+
+1. Download this [Lux Lavalier Backup.pbb](/assets/Lux%20Lavalier%20Backup.pbb) file.
+1. Scroll to the bottom of the Settings page and click the red `Restore from Backup` button.
+1. Click the blue `Open backup file` button.
+1. Browse to, select, and open the `Lux Lavalier Backup.pbb` file that you downloaded.
+1. Click the red `Start Restore` button.
+1. The process will take a few minutes, then the Pixelblaze will restart.
+
+We won't go over every setting on this page, just the ones that are important for the use of your Lux Lavalier:
 
 - Name: you can give your Lux Lavalier a unique name to differentiate it from others. This is especially useful if you have multiple Lux Lavaliers and/or Pixelblaze controllers on the same network.
 - LED Settings
